@@ -29,28 +29,30 @@ O professor completa o perfil, escolhe de 1 a 20 escolas e acompanha as conexõe
 
 1. **Acesso:** entra pela SED e vê o aviso de participação no processo.
 2. **Dados automáticos:** confere os dados que vêm da SED (somente leitura).
-3. **Foto:** envia a foto de perfil (JPG/PNG, recorte quadrado, até 5 MB).
-4. **Fit cultural:** responde 10 perguntas. O rascunho é salvo durante o preenchimento; as respostas completas são registradas ao clicar em **Registrar respostas** ou ao avançar. Depois do registro, não podem ser editadas.
-5. **Comentário:** escreve uma apresentação livre (sugestão: até 500 caracteres).
-6. **Vídeo:** informa o link do YouTube (não listado), com validação do link e duração máxima de 5 minutos.
-7. **Escolha de escolas:** seleciona de 1 a 20 escolas de qualquer diretoria.
-8. **Revisão e envio:** vê a prévia do mini currículo, o total de respostas de fit preenchidas e confirma o envio. Se as 10 respostas estiverem completas no rascunho, o envio as registra. Se faltar alguma, o usuário pode voltar por **Editar fit cultural**.
-9. **Acompanhamento:** após o envio, vê o status e as escolas que o conectaram. No protótipo, as conexões aparecem assim que o diretor decide. O professor clica em **Conectar** em uma única escola para finalizar.
+3. **Disciplinas de interesse:** escolhe ao menos uma disciplina que deseja lecionar entre as habilitadas e correlatas da sua formação. Não pode adicionar uma disciplina fora dessa lista.
+4. **Foto:** envia a foto de perfil (JPG/PNG, recorte quadrado, até 5 MB).
+5. **Fit cultural:** responde 10 perguntas. O rascunho é salvo durante o preenchimento; as respostas completas são registradas ao clicar em **Registrar respostas** ou ao avançar. Depois do registro, não podem ser editadas.
+6. **Comentário:** escreve uma apresentação livre (sugestão: até 500 caracteres).
+7. **Vídeo:** informa o link de um vídeo não listado no YouTube e sua duração em mm:ss. O envio aceita de 00:01 a 05:00. Neste protótipo, a duração é declarada pelo professor; a verificação automática do vídeo e da privacidade depende de integração com o YouTube.
+8. **Escolha de escolas:** seleciona de 1 a 20 escolas de qualquer diretoria e define a ordem de prioridade.
+9. **Revisão e envio:** vê a prévia do mini currículo, as disciplinas escolhidas, a duração informada do vídeo e o total de respostas de fit preenchidas. Se as 10 respostas estiverem completas no rascunho, o envio as registra. Se faltar alguma, o usuário pode voltar por **Editar fit cultural**.
+10. **Acompanhamento:** após o envio, vê o status e as escolas que o conectaram. No protótipo, as conexões aparecem assim que o diretor decide. O professor clica em **Conectar** em uma única escola para finalizar.
 
 **Tela: escolha de escolas**
 
-- Filtros: diretoria, município, nome/código da escola, tipo (PEI/regular)
-- Grid padrão SED com: código, escola, diretoria, município, PEI (sim/não), ação Adicionar
-- Lista "Minhas escolas" com opção de remover
+- Filtros: diretoria, município, escola, PEI (sim/não) e etapa de ensino (anos finais do Ensino Fundamental, Ensino Médio e EJA no protótipo)
+- Grid padrão SED com: código, escola, diretoria, município, PEI (sim/não), etapas de ensino e ação Adicionar
+- Lista "Minhas escolas" numerada por prioridade, com ações **Subir**, **Descer** e **Remover**; a posição 1 é a maior prioridade
 - Contador "X de 20 escolas"
 - Aviso visível: "Os diretores das escolas escolhidas verão o seu perfil. Se mais de uma escola conectar com você, a decisão final é sua."
 - Escolas PEI só aparecem habilitadas se o professor for credenciado para PEI
+- O diretor não vê a lista completa de escolas escolhidas nem a ordem de prioridade do professor
 
 **Status visíveis ao professor**
 
 | Status | Quando aparece |
 | --- | --- |
-| Perfil incompleto | Faltam foto, 10 respostas de fit registradas, vídeo ou ao menos uma escola |
+| Perfil incompleto | Faltam foto, uma disciplina de interesse, 10 respostas de fit registradas, vídeo de até 5 minutos ou ao menos uma escola |
 | Em análise | Prazo dos diretores em andamento |
 | Escolha pendente | Uma ou mais escolas conectaram; o professor precisa finalizar com uma |
 | Conexão finalizada | Professor conectou com uma escola |
@@ -60,6 +62,8 @@ O professor completa o perfil, escolhe de 1 a 20 escolas e acompanha as conexõe
 
 - O professor não vê quais diretores clicaram em Passar
 - Durante o prazo, pode editar foto, comentário, vídeo e escolas; as respostas de fit ficam bloqueadas após o registro das 10 perguntas
+- Pode alterar as disciplinas de interesse somente entre as compatíveis com sua formação
+- Pode reordenar as escolas escolhidas; essa prioridade é privada para o professor
 - Após o fim do prazo do professor, o perfil fica bloqueado
 - Após enviar o perfil, **Continuar** e a troca para a visão do professor levam ao acompanhamento, sem reabrir o cadastro
 - No acompanhamento, vê somente as escolas que o conectaram e pode usar **Conectar** em apenas uma
@@ -85,7 +89,7 @@ O diretor vê em lista todos os professores que escolheram a sua escola, abre o 
 | Nome | Link para o mini currículo |
 | Cargo |  |
 | Categoria | O, Efetivo, OFA etc. |
-| Disciplinas habilitadas | Destacar as aderentes à necessidade da escola |
+| Disciplinas de interesse | Escolhidas pelo professor entre as habilitadas e correlatas da sua formação |
 | Farol | Ícone vermelho / amarelo / verde |
 | PEI | Credenciado sim/não |
 | Nota final |  |
@@ -102,6 +106,7 @@ O diretor vê em lista todos os professores que escolheram a sua escola, abre o 
 - Não há campo de justificativa
 - O professor só aparece como candidato da escola que selecionou depois de enviar o perfil
 - A decisão do diretor é registrada por escola; mais de uma escola pode conectar o mesmo professor
+- O diretor vê as disciplinas que o professor quer lecionar, mas não vê a ordem de prioridade das escolas
 - A decisão final é do professor: após a conexão dele, o diretor vê "Conexão finalizada com sua escola" ou "Escolheu outra escola"
 
 ## Mini currículo estilo LinkedIn
@@ -114,11 +119,12 @@ O mini currículo é um card de perfil em blocos, com o mesmo layout na prévia 
 2. **Linha de dados rápidos:** chips com Categoria, DI, Idade, Data de exercício e CPF mascarado (\***.123.456-**).
 3. **Indicadores:** cards numéricos lado a lado com Nota final de confirmação e Nota PSS (novo).
 4. **Sobre:** o comentário do professor, com "ver mais" quando longo.
-5. **Vídeo:** player do YouTube incorporado, no padrão 16:9, com até 5 minutos.
+5. **Vídeo:** player do YouTube incorporado, no padrão 16:9, com a duração informada (até 5 minutos).
 6. **Formação:** disciplinas habilitadas como tags de destaque; correlatas como tags secundárias. Selo "aderente à vaga" nas que batem com a necessidade da escola.
-7. **Fit cultural:** as 10 perguntas com as respostas do professor, em acordeão ou cards.
-8. **Escolas escolhidas:** só na visão do professor.
-9. **Barra de ação fixa (visão diretor):** botões **Conectar** (primário) e **Passar** (secundário), com setas para ir ao próximo/anterior candidato sem voltar à lista.
+7. **Disciplinas de interesse:** seleção feita pelo professor entre as opções da sua formação, visível ao diretor.
+8. **Fit cultural:** as 10 perguntas com as respostas do professor, em acordeão ou cards.
+9. **Escolas escolhidas:** lista em ordem de prioridade, só na visão do professor.
+10. **Barra de ação fixa (visão diretor):** botões **Conectar** (primário) e **Passar** (secundário), com setas para ir ao próximo/anterior candidato sem voltar à lista.
 
 **Diretrizes visuais**
 
@@ -138,14 +144,17 @@ O diretor conecta primeiro; depois o professor finaliza a conexão com uma das e
 | RN02 | Não há entrevista nem atribuição em nível de diretoria |
 | RN03 | Todo participante escolhe de 1 a 20 escolas, de qualquer diretoria |
 | RN04 | As 10 perguntas de fit cultural têm rascunho persistente; depois de registradas, as respostas não podem ser editadas |
-| RN05 | Vídeo obrigatório via link do YouTube não listado, com até 5 minutos |
+| RN05 | Vídeo obrigatório via link do YouTube não listado, com duração de 00:01 a 05:00; no protótipo, a duração é informada pelo professor |
 | RN06 | O diretor decide entre Conectar e Passar, sem justificativa |
 | RN07 | No protótipo, o professor vê no acompanhamento as escolas que o conectaram assim que há decisão do diretor, sem reiniciar o cadastro |
 | RN08 | O professor usa **Conectar** para finalizar com uma única escola; a conexão é definitiva e libera as demais escolas |
 | RN09 | Escolas PEI só podem ser escolhidas por professores credenciados |
 | RN10 | CPF exibido sempre mascarado |
-| RN11 | O envio exige foto, 10 respostas completas de fit cultural, vídeo válido e ao menos uma escola; respostas completas no rascunho são registradas no envio |
+| RN11 | O envio exige foto, ao menos uma disciplina de interesse, 10 respostas completas de fit cultural, vídeo válido de até 5 minutos e ao menos uma escola; respostas completas no rascunho são registradas no envio |
 | RN12 | Cada decisão do diretor pertence à escola correspondente; a conexão final do professor bloqueia novas decisões no protótipo |
+| RN13 | As disciplinas de interesse devem pertencer às disciplinas habilitadas ou correlatas da formação do professor |
+| RN14 | O professor define e pode alterar a ordem de prioridade das escolas escolhidas; o diretor não vê essa lista nem sua ordem |
+| RN15 | A busca de escolas pode ser filtrada por PEI e etapa de ensino; a lista mostra esses atributos em cada escola |
 
 **Pontos em aberto**
 
@@ -158,3 +167,5 @@ O diretor conecta primeiro; depois o professor finaliza a conexão com uma das e
 - [ ] Termo de consentimento de uso de imagem e vídeo (LGPD)
 - [ ] Definição das 10 perguntas de fit cultural
 - [ ] Calendário: prazo do professor, prazo do diretor, liberação das conexões recebidas, prazo da conexão final e divulgação do resultado
+- [ ] Integração com o YouTube para verificar automaticamente duração de até 5 minutos e privacidade não listada
+- [ ] Fonte oficial e atualização das etapas de ensino oferecidas por cada escola
