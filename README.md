@@ -1,4 +1,4 @@
-# Conecta Escola SP — protótipo navegável
+# Escola SP Conecta — protótipo navegável
 
 Protótipo estático baseado no PRD. Dados demonstrativos e decisões ficam no `localStorage` do navegador; não há integração com a SED, autenticação ou persistência no servidor.
 

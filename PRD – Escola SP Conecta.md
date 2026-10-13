@@ -1,10 +1,10 @@
-# PRD – Conecta Escola SP
+# PRD – Escola SP Conecta
 
 Oct 13, 2026 · @Luiz Torato
 
 ## Visão geral
 
-O Conecta Escola SP substitui a entrevista e a atribuição em nível de diretoria por uma conexão em duas etapas: o professor monta um perfil e escolhe de 1 a 20 escolas de toda a rede; cada diretor pode conectar os professores que escolheram sua escola; por fim, o professor usa **Conectar** para finalizar com uma única escola entre as que o conectaram.
+A Escola SP Conecta substitui a entrevista e a atribuição em nível de diretoria por uma conexão em duas etapas: o professor monta um perfil e escolhe de 1 a 20 escolas de toda a rede; cada diretor pode conectar os professores que escolheram sua escola; por fim, o professor usa **Conectar** para finalizar com uma única escola entre as que o conectaram.
 
 **Objetivo:** dar autonomia ao diretor na composição da equipe e ampliar as opções do professor para além da própria diretoria.
 
