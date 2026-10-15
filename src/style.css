@@ -15,4 +15,34 @@
 .director-school{display:flex;align-items:center;gap:12px;margin:0 0 22px;padding:12px;background:#f4f9fc;border:1px solid #dceaf3}.director-school label{font-weight:bold;white-space:nowrap}.director-school select{min-width:0;max-width:550px;width:100%}@media(max-width:700px){.director-school{display:block}.director-school select{margin-top:8px}}
 .subject-options{display:grid;gap:10px;max-width:620px;margin:18px 0}.subject-options label{display:flex;align-items:center;gap:12px;border:1px solid #dceaf3;border-radius:5px;padding:12px;cursor:pointer}.subject-options input{width:18px;height:18px;min-height:18px}.subject-options small{display:block;color:#6b7882;margin-top:3px}.selected-schools li{display:flex;align-items:center;justify-content:space-between;gap:12px}.selected-schools li span{min-width:0;flex:1}.priority-actions{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}@media(max-width:700px){.selected-schools li{align-items:flex-start;flex-direction:column}.priority-actions{justify-content:flex-start}}
 .priority-rank{color:#2878ad;font-size:16px;min-width:24px}
-.diagnostic-card{background:linear-gradient(160deg,#fff 0%,#f8fbfd 100%);border-color:#d7e5ed}.diagnostic-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}.diagnostic-heading h3{font-size:22px;color:#193d54;margin:5px 0 7px}.diagnostic-heading p{color:#657b89;margin:0}.diagnostic-kicker{color:#3988b5;font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}.diagnostic-demo{flex:none;background:#eef4f7;border:1px solid #deeaef;border-radius:999px;color:#617886;font-size:11px;padding:6px 10px}.diagnostic-legend{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0 4px;color:#526977;font-size:12px}.diagnostic-legend span{display:inline-flex;align-items:center;gap:6px}.diagnostic-legend i{width:9px;height:9px;border-radius:50%;display:inline-block}.diagnostic-legend i.vermelho{background:#d95055}.diagnostic-legend i.amarelo{background:#e4a62f}.diagnostic-legend i.verde{background:#2ca776}.diagnostic-plot{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:end;gap:clamp(10px,3vw,34px);border-bottom:1px solid #dce7ed;padding:12px 16px 0;background:repeating-linear-gradient(to top,transparent 0,transparent 45px,#e9f0f4 46px);border-radius:8px 8px 0 0}.diagnostic-item{display:flex;align-items:center;flex-direction:column;min-width:0}.diagnostic-value{font-size:11px;font-weight:700;border-radius:999px;padding:5px 9px;margin-bottom:8px}.diagnostic-value.vermelho{color:#aa3036;background:#fcebed}.diagnostic-value.amarelo{color:#8a620c;background:#fff3d8}.diagnostic-value.verde{color:#176a4a;background:#e3f7ec}.diagnostic-track{height:166px;width:min(100%,76px);display:flex;align-items:flex-end;justify-content:center}.diagnostic-bar{width:100%;border-radius:9px 9px 0 0;box-shadow:inset 0 1px 0 #ffffff66,0 3px 10px #193d541a}.diagnostic-bar.vermelho{height:38%;background:linear-gradient(180deg,#ec777b,#d54c52)}.diagnostic-bar.amarelo{height:66%;background:linear-gradient(180deg,#f2c05a,#dea027)}.diagnostic-bar.verde{height:94%;background:linear-gradient(180deg,#57c89a,#269b6d)}.diagnostic-period{min-height:49px;margin-top:11px;text-align:center}.diagnostic-period strong,.diagnostic-period span{display:block}.diagnostic-period strong{color:#24485d;font-size:12px}.diagnostic-period span{color:#708793;font-size:11px;margin-top:3px}.diagnostic-caption{color:#718693;font-size:11px;margin:12px 0 0}@media(max-width:700px){.diagnostic-heading{display:block}.diagnostic-demo{display:inline-block;margin-top:10px}.diagnostic-plot{gap:8px;padding:10px 0 0}.diagnostic-track{height:132px;width:min(100%,52px)}.diagnostic-value{font-size:10px;padding:4px 5px}.diagnostic-period strong{font-size:11px}}
+.diagnostic-card{background:linear-gradient(160deg,#fff 0%,#f8fbfd 100%);border-color:#d7e5ed}
+.diagnostic-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.diagnostic-heading h3{font-size:22px;color:#193d54;margin:5px 0 7px}
+.diagnostic-heading p{color:#657b89;margin:0}
+.diagnostic-kicker{color:#3988b5;font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+.diagnostic-demo{flex:none;background:#eef4f7;border:1px solid #deeaef;border-radius:999px;color:#617886;font-size:11px;padding:6px 10px}
+.diagnostic-legend{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0 12px;color:#526977;font-size:12px}
+.diagnostic-legend span{display:inline-flex;align-items:center;gap:6px}
+.diagnostic-legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.diagnostic-legend i.vermelho{background:#d95055}
+.diagnostic-legend i.amarelo{background:#e4a62f}
+.diagnostic-legend i.verde{background:#2ca776}
+.diagnostic-plot{height:192px;position:relative;border:1px solid #e1ebf0;border-radius:10px;background:linear-gradient(180deg,#fff,#f6fafc);overflow:hidden}
+.diagnostic-plot svg{position:absolute;inset:0;width:100%;height:100%}
+.diagnostic-gridline{stroke:#dfebf1;stroke-width:1.5;stroke-dasharray:5 7}
+.diagnostic-line{fill:none;stroke:#2d6687;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.diagnostic-point{position:absolute;width:19px;height:19px;border:3px solid #fff;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 2px 8px #1e435255;z-index:1}
+.diagnostic-point.vermelho{background:#d95055}
+.diagnostic-point.amarelo{background:#e4a62f}
+.diagnostic-point.verde{background:#2ca776}
+.diagnostic-periods{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding-top:13px}
+.diagnostic-period{text-align:center;min-width:0}
+.diagnostic-period strong,.diagnostic-period span{display:block}
+.diagnostic-period strong{color:#24485d;font-size:12px}
+.diagnostic-period>span:first-of-type{color:#708793;font-size:11px;margin-top:3px}
+.diagnostic-value{width:max-content;max-width:100%;margin:9px auto 0;font-size:11px;font-weight:700;border-radius:999px;padding:5px 9px}
+.diagnostic-value.vermelho{color:#aa3036;background:#fcebed}
+.diagnostic-value.amarelo{color:#8a620c;background:#fff3d8}
+.diagnostic-value.verde{color:#176a4a;background:#e3f7ec}
+.diagnostic-caption{color:#718693;font-size:11px;margin:15px 0 0}
+@media(max-width:700px){.diagnostic-heading{display:block}.diagnostic-demo{display:inline-block;margin-top:10px}.diagnostic-plot{height:170px}.diagnostic-period strong{font-size:11px}.diagnostic-value{font-size:10px;padding:4px 5px}}
