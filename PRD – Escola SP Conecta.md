@@ -110,19 +110,20 @@ O diretor vê em lista todos os professores que escolheram a sua escola, abre o 
 
 ## Mini currículo estilo LinkedIn
 
-O mini currículo é um card de perfil em blocos, com o mesmo layout na prévia do professor e no detalhe do diretor. A diferença é que só o professor vê a lista das escolas que escolheu.
+O mini currículo é um card de perfil em blocos. O professor vê a lista das escolas que escolheu; o diretor vê, adicionalmente, o gráfico de Avaliação Diagnóstica - Farol. A ordem de prioridade das escolas não aparece para o diretor.
 
 **Estrutura de cima para baixo**
 
 1. **Header (capa):** faixa colorida no topo, foto circular sobreposta, nome em destaque e cargo logo abaixo. Ao lado, os badges Farol (cor), PEI credenciado e Indicação de não permanência, quando houver.
 2. **Linha de dados rápidos:** chips com Categoria, DI, Idade, Data de exercício e CPF mascarado (\***.123.456-**).
 3. **Indicadores:** cards numéricos lado a lado com Nota final de confirmação e Nota PSS (novo).
-4. **Sobre:** o comentário do professor, com "ver mais" quando longo.
-5. **Vídeo:** player do YouTube incorporado, no padrão 16:9, com a duração informada (até 5 minutos).
-6. **Formação:** disciplinas habilitadas como tags de destaque; correlatas como tags secundárias. Selo "aderente à vaga" nas que batem com a necessidade da escola.
-7. **Disciplinas de interesse:** seleção feita pelo professor entre as opções da sua formação, visível ao diretor.
-8. **Escolas escolhidas:** lista em ordem de prioridade, só na visão do professor.
-9. **Barra de ação fixa (visão diretor):** botões **Conectar** (primário) e **Passar** (secundário), com setas para ir ao próximo/anterior candidato sem voltar à lista.
+4. **Avaliação Diagnóstica - Farol (somente diretor):** gráfico de quatro barras para Parcial 2025, Final 2025, Parcial 2026 e Final 2026. Cada barra usa uma das faixas vermelho, amarelo ou verde; a altura representa a faixa qualitativa, sem nota numérica. No protótipo, o histórico é demonstrativo e a última faixa coincide com o farol atual do professor.
+5. **Sobre:** o comentário do professor, com "ver mais" quando longo.
+6. **Vídeo:** player do YouTube incorporado, no padrão 16:9, com a duração informada (até 5 minutos).
+7. **Formação:** disciplinas habilitadas como tags de destaque; correlatas como tags secundárias. Selo "aderente à vaga" nas que batem com a necessidade da escola.
+8. **Disciplinas de interesse:** seleção feita pelo professor entre as opções da sua formação, visível ao diretor.
+9. **Escolas escolhidas:** lista em ordem de prioridade, só na visão do professor.
+10. **Barra de ação fixa (visão diretor):** botões **Conectar** (primário) e **Passar** (secundário), com setas para ir ao próximo/anterior candidato sem voltar à lista.
 
 **Diretrizes visuais**
 
@@ -152,6 +153,7 @@ O diretor marca **Conectar** ou **Passar** para cada professor. Ao encerrar o pr
 | RN13 | As disciplinas de interesse devem pertencer às disciplinas habilitadas ou correlatas da formação do professor |
 | RN14 | O professor define e pode alterar a ordem de prioridade das escolas escolhidas; o diretor não vê essa lista nem sua ordem |
 | RN15 | A busca de escolas pode ser filtrada por PEI e etapa de ensino; a lista mostra esses atributos em cada escola |
+| RN16 | O gráfico de Avaliação Diagnóstica - Farol aparece somente no mini currículo do diretor, com quatro períodos e faixas vermelho, amarelo ou verde; o histórico usado no protótipo é demonstrativo |
 
 **Pontos em aberto**
 
