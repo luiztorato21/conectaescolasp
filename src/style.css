@@ -30,6 +30,10 @@
 .diagnostic-plot{height:192px;position:relative;border:1px solid #e1ebf0;border-radius:10px;background:linear-gradient(180deg,#fff,#f6fafc);overflow:hidden}
 .diagnostic-plot svg{position:absolute;inset:0;width:100%;height:100%}
 .diagnostic-gridline{stroke:#dfebf1;stroke-width:1.5;stroke-dasharray:5 7}
+.diagnostic-bar{opacity:.82;filter:drop-shadow(0 3px 4px #24485d26)}
+.diagnostic-bar.vermelho{fill:#d95055}
+.diagnostic-bar.amarelo{fill:#e4a62f}
+.diagnostic-bar.verde{fill:#2ca776}
 .diagnostic-line{fill:none;stroke:#2d6687;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .diagnostic-point{position:absolute;width:19px;height:19px;border:3px solid #fff;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 2px 8px #1e435255;z-index:1}
 .diagnostic-point.vermelho{background:#d95055}
