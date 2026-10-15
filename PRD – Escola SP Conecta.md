@@ -96,7 +96,7 @@ O diretor vê em lista todos os professores que escolheram a sua escola, abre o 
 
 - Filtros: categoria, disciplina, farol, PEI, decisão
 - Ordenação por qualquer coluna
-- Ações rápidas Conectar e Passar direto na linha
+- Ações rápidas na linha: **Conectar** em verde com joinha para cima (👍) e **Passar** em vermelho com joinha para baixo (👎)
 
 **Regras da visão diretor**
 
@@ -123,7 +123,7 @@ O mini currículo é um card de perfil em blocos. O professor vê a lista das es
 7. **Formação:** disciplinas habilitadas como tags de destaque; correlatas como tags secundárias. Selo "aderente à vaga" nas que batem com a necessidade da escola.
 8. **Disciplinas de interesse:** seleção feita pelo professor entre as opções da sua formação, visível ao diretor.
 9. **Escolas escolhidas:** lista em ordem de prioridade, só na visão do professor.
-10. **Barra de ação fixa (visão diretor):** botões **Conectar** (primário) e **Passar** (secundário), com setas para ir ao próximo/anterior candidato sem voltar à lista.
+10. **Barra de ação fixa (visão diretor):** botões **Conectar** em verde com 👍 e **Passar** em vermelho com 👎, com setas para ir ao próximo/anterior candidato sem voltar à lista.
 
 **Diretrizes visuais**
 

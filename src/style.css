@@ -50,3 +50,9 @@
 .diagnostic-value.verde{color:#176a4a;background:#e3f7ec}
 .diagnostic-caption{color:#718693;font-size:11px;margin:15px 0 0}
 @media(max-width:700px){.diagnostic-heading{display:block}.diagnostic-demo{display:inline-block;margin-top:10px}.diagnostic-plot{height:170px}.diagnostic-period strong{font-size:11px}.diagnostic-value{font-size:10px;padding:4px 5px}}
+.btn.director-connect,.btn.director-pass{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-weight:600}
+.btn.director-connect{background:#228557;border-color:#19764b;color:#fff}
+.btn.director-connect:hover{background:#176d46;border-color:#145e3d}
+.btn.director-pass{background:#cd454b;border-color:#b83a40;color:#fff}
+.btn.director-pass:hover{background:#aa3037;border-color:#91262d}
+.vote-icon{font-size:1.15em;line-height:1}
