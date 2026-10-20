@@ -59,7 +59,7 @@ O professor completa o perfil, ordena de 1 a 20 escolas por prioridade e acompan
 
 **Regras da visão professor**
 
-- O professor não vê quais diretores clicaram em Passar
+- O professor não vê quais diretores clicaram em Não conectar
 - Durante o prazo, pode editar foto, comentário, vídeo e escolas
 - Pode alterar as disciplinas de interesse somente entre as compatíveis com sua formação
 - Pode reordenar as escolas escolhidas; essa prioridade é privada para o professor
@@ -70,14 +70,14 @@ O professor completa o perfil, ordena de 1 a 20 escolas por prioridade e acompan
 
 ## Visão Diretor
 
-O diretor vê em lista todos os professores que escolheram a sua escola, abre o mini currículo e decide entre Conectar e Passar.
+O diretor vê em lista todos os professores que escolheram a sua escola, abre o mini currículo e decide entre Conectar e Não conectar.
 
 **Fluxo**
 
-1. **Acesso:** entra pela SED e vê um painel da sua escola com o total de candidatos, quantos já foram conectados ou passados e quantos estão pendentes. No protótipo, seleciona a escola do diretor para simular mais de uma escola.
+1. **Acesso:** entra pela SED e vê um painel da sua escola com o total de candidatos, quantos já foram conectados ou não conectados e quantos estão pendentes. No protótipo, seleciona a escola do diretor para simular mais de uma escola.
 2. **Lista de candidatos:** grid padrão SED.
 3. **Detalhe:** abre o mini currículo estilo LinkedIn.
-4. **Decisão:** clica em Conectar ou Passar, sem justificativa.
+4. **Decisão:** clica em Conectar ou Não conectar, confirma a escolha antes do registro e não precisa informar justificativa.
 5. **Resultado:** após o encerramento do prazo, vê se o sistema distribuiu o professor para sua escola, para outra escola ou se não houve distribuição.
 
 **Grid de candidatos (padrão SED)**
@@ -92,11 +92,11 @@ O diretor vê em lista todos os professores que escolheram a sua escola, abre o 
 | Farol | Ícone vermelho / amarelo / verde |
 | PEI | Credenciado sim/não |
 | Nota final |  |
-| Decisão | Pendente / Conectado / Passado |
+| Decisão | Pendente / Conectado / Não conectado |
 
 - Filtros: categoria, disciplina, farol, PEI, decisão
 - Ordenação por qualquer coluna
-- Ações rápidas na linha: **Conectar** em verde com joinha para cima (👍) e **Passar** em vermelho com joinha para baixo (👎)
+- Ações rápidas na linha: **Conectar** em verde com joinha para cima (👍) e **Não conectar** em vermelho com joinha para baixo (👎)
 
 **Regras da visão diretor**
 
@@ -123,7 +123,7 @@ O mini currículo é um card de perfil em blocos. O professor vê a lista das es
 7. **Formação:** disciplinas habilitadas como tags de destaque; correlatas como tags secundárias. Selo "aderente à vaga" nas que batem com a necessidade da escola.
 8. **Disciplinas de interesse:** seleção feita pelo professor entre as opções da sua formação, visível ao diretor.
 9. **Escolas escolhidas:** lista em ordem de prioridade, só na visão do professor.
-10. **Barra de ação fixa (visão diretor):** botões **Conectar** em verde com 👍 e **Passar** em vermelho com 👎, com setas para ir ao próximo/anterior candidato sem voltar à lista.
+10. **Barra de ação fixa (visão diretor):** botões **Conectar** em verde com 👍 e **Não conectar** em vermelho com 👎, com setas para ir ao próximo/anterior candidato sem voltar à lista.
 
 **Diretrizes visuais**
 
@@ -135,7 +135,7 @@ O mini currículo é um card de perfil em blocos. O professor vê a lista das es
 
 ## Regras de negócio e pontos em aberto
 
-O diretor marca **Conectar** ou **Passar** para cada professor. Ao encerrar o prazo dos diretores, o sistema percorre a lista de escolas do professor em ordem de prioridade e define a primeira que marcou **Conectar**. Se a primeira não o conectou, tenta a segunda e assim por diante. Antes do encerramento, o professor vê **Em análise**. Se nenhuma escola o conectou, mostra **Sem conexão**; o encaminhamento posterior permanece em aberto.
+O diretor marca **Conectar** ou **Não conectar** para cada professor. O sistema pede confirmação antes de gravar a decisão; se ele cancelar, a decisão anterior permanece. Ao encerrar o prazo dos diretores, o sistema percorre a lista de escolas do professor em ordem de prioridade e define a primeira que marcou **Conectar**. Se a primeira não o conectou, tenta a segunda e assim por diante. Antes do encerramento, o professor vê **Em análise**. Se nenhuma escola o conectou, mostra **Sem conexão**; o encaminhamento posterior permanece em aberto.
 
 | # | Regra |
 | --- | --- |
@@ -143,7 +143,7 @@ O diretor marca **Conectar** ou **Passar** para cada professor. Ao encerrar o pr
 | RN02 | Não há entrevista nem atribuição em nível de diretoria |
 | RN03 | Todo participante escolhe de 1 a 20 escolas, de qualquer diretoria |
 | RN05 | Vídeo obrigatório via link do YouTube não listado, com duração de 00:01 a 05:00; no protótipo, a duração é informada pelo professor |
-| RN06 | O diretor decide entre Conectar e Passar, sem justificativa |
+| RN06 | O diretor decide entre Conectar e Não conectar, sem justificativa |
 | RN07 | Antes do encerramento do prazo dos diretores, o professor vê apenas **Em análise**; após o encerramento, vê a escola definida ou **Sem conexão**, sem reiniciar o cadastro |
 | RN08 | Ao encerrar o prazo dos diretores, o sistema define automaticamente a primeira escola da ordem de prioridade do professor que marcou **Conectar**; o professor não escolhe nem confirma |
 | RN09 | Escolas PEI só podem ser escolhidas por professores credenciados |
